@@ -21,7 +21,7 @@ function Search() {
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     useEffect(() => {
-        axios.get("http://datapeace-storage.s3-us-west-2.amazonaws.com/dummy_data/users.json")
+        axios.get("https://datapeace-storage.s3-us-west-2.amazonaws.com/dummy_data/users.json")
             .then((res) => {
                 console.log(res)
                 setData(res.data)
